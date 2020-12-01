@@ -1,8 +1,9 @@
 from django.urls import path, include
 
-from main_app import views
+from .views import GlossaryView
+
+app_name = "main_app"
 
 urlpatterns = [
-    # previous login view
-    path('glossaries/', views.glossary_list, name='glossaries'),
+    path('glossaries/', GlossaryView.as_view()),
 ]
