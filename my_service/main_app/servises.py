@@ -4,7 +4,7 @@ from django.core.validators import validate_slug
 from .models import Version, Glossary, GlossaryElement
 
 
-def validate_parameters(id=None, slug=None, date=None):
+def is_parameters_valid(id=None, slug=None, date=None):
     try:
         if id == '0':
             return False

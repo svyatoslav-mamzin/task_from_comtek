@@ -1,3 +1,4 @@
 # Project exclude paths
 /venv/
 my_service/vlenv/
+/.idea/
