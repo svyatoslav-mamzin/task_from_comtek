@@ -2,10 +2,9 @@ from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from .models import Glossary
-from .models import GlossaryElement
-from .serializers import GlossarySerializer, ElementsGlossarySerializer
-from .servises import date_validation
-from datetime import datetime
+from .serializers import GlossarySerializer, ElementsGlossarySerializer, VersionsSerializer
+from .servises import date_validation, get_current_versions, get_elements_current_glossary, \
+    get_elements_glossary_cpec_ver, validate_parameters
 
 
 class GlossaryView(APIView):
@@ -19,13 +18,11 @@ class GlossaryView(APIView):
 class CurrentGlossariesView(APIView):
     # получение списка справочников актуальных на указанную дату.
     def get(self, request, date):
-        data = date_validation(date)
-        if data:
-            glossaries = Glossary.objects.filter(version__initial_date__lte=data)
-            glossarie2 = Glossary.objects.filter(version__initial_date__gte=data)
-            glossaries.intersection(glossarie2)
+
+        if validate_parameters(date=date):
+            glossaries = get_current_versions(date)
             if glossaries:
-                serializer = GlossarySerializer(glossaries, many=True)
+                serializer = VersionsSerializer(glossaries, many=True)
                 return Response({"current glossaries": serializer.data})
             else:
                 return Response(status=status.HTTP_404_NOT_FOUND)
@@ -36,25 +33,24 @@ class CurrentGlossariesView(APIView):
 class ElementsGlossaryCurrentVersView(APIView):
     # получение элементов заданного справочника текущей версии
     def get(self, request, id):
-        # is valid id and version дописать!!!
-        date = datetime.now().date()
-        elements = GlossaryElement.objects.filter(glossary_ver__glossary__id=id,
-                                                  glossary_ver__initial_date__lte=date)
-        if elements:
-            serializer = ElementsGlossarySerializer(elements, many=True)
-            return Response({"Elements Glossary Current Version": serializer.data})
-        else:
-            return Response(status=status.HTTP_404_NOT_FOUND)
+        if validate_parameters(id=id):
+            elements = get_elements_current_glossary(id)
+            if elements:
+                serializer = ElementsGlossarySerializer(elements, many=True)
+                return Response({"Elements Glossary Current Version": serializer.data})
+            else:
+                return Response(status=status.HTTP_404_NOT_FOUND)
+        return Response(status=status.HTTP_400_BAD_REQUEST)
 
 
 class ElementsGlossarySpecVersView(APIView):
     # получение элементов заданного справочника указанной версии
     def get(self, request, id, version):
-        # is valid id and version дописать!!!
-        elements = GlossaryElement.objects.filter(glossary_ver__glossary__id=id,
-                                                  glossary_ver__version=version)
-        if elements:
-            serializer = ElementsGlossarySerializer(elements, many=True)
-            return Response({"Elements Glossary Spec Vers": serializer.data})
-        else:
-            return Response(status=status.HTTP_404_NOT_FOUND)
+        if validate_parameters(id=id, slug=version):
+            elements = get_elements_glossary_cpec_ver(id, version)
+            if elements:
+                serializer = ElementsGlossarySerializer(elements, many=True)
+                return Response({"Elements Glossary Spec Vers": serializer.data})
+            else:
+                return Response(status=status.HTTP_404_NOT_FOUND)
+        return Response(status=status.HTTP_400_BAD_REQUEST)
