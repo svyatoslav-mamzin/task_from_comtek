@@ -18,17 +18,18 @@ from main_app.servises import get_current_version, get_elements_current_glossary
 #reverse('id').distinct('id').
 #glossaries = Glossary.objects.filter(version__initial_date__lte=date)
 #.latest('pub_date')
-id=6
-print(get_current_version(id))
-print()
-print(get_elements_current_glossary(id))
+#id=6
+#print(get_current_version(id))
+#print()
+#print(get_elements_current_glossary(id))
 #qwerty_list = list()
 #for glossary in Version.objects.filter(initial_date__lte=date).latest('initial_date'):
     #for ver in glossary.version:
 #    print(glossary)
 #    qwerty_list.append(glossary)
 #print(qwerty_list)
-validate_slug("%71!")
+#alidate_slug("%71!")
+
 
 
 

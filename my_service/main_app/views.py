@@ -4,7 +4,7 @@ from rest_framework.views import APIView
 from .models import Glossary
 from .serializers import GlossarySerializer, ElementsGlossarySerializer, VersionsSerializer
 from .servises import get_current_versions, get_elements_current_glossary, \
-    get_elements_glossary_cpec_ver, is_parameters_valid
+    get_elements_glossary_cpec_ver, is_parameters_valid, get_filtered_items
 from my_service.pagination import MyPaginationMixin
 from rest_framework.settings import api_settings
 
@@ -73,6 +73,29 @@ class ElementsGlossarySpecVersView(APIView, MyPaginationMixin):
             if page is not None:
                 serializer = self.serializer_class(page, many=True)
                 return self.get_paginated_response({"elements glossary specified version": serializer.data})
+            else:
+                return Response(status=status.HTTP_404_NOT_FOUND)
+        return Response(status=status.HTTP_400_BAD_REQUEST)
+
+
+class ElementGlossaryFilter(APIView, MyPaginationMixin):
+    # валидация элементов заданного справочника текущей версии
+    queryset = None
+    serializer_class = ElementsGlossarySerializer
+    pagination_class = api_settings.DEFAULT_PAGINATION_CLASS
+
+    def get(self, request, id):
+        elements_list = request.GET.getlist('element_id')
+        version = request.GET.get('version')
+        if is_parameters_valid(id=id, slug=version, list_id=elements_list):
+            if version:
+                self.queryset = get_filtered_items(id, elements_list, version=version)
+            else:
+                self.queryset = get_filtered_items(id, elements_list)
+            page = self.paginate_queryset(self.queryset)
+            if page is not None:
+                serializer = self.serializer_class(page, many=True)
+                return self.get_paginated_response({"filtered elements": serializer.data})
             else:
                 return Response(status=status.HTTP_404_NOT_FOUND)
         return Response(status=status.HTTP_400_BAD_REQUEST)
