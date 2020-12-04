@@ -5,6 +5,7 @@ from .models import Version, Glossary, GlossaryElement
 
 
 def is_parameters_valid(id=None, slug=None, date=None):
+    # проверка параметров
     try:
         if id == '0':
             return False
@@ -13,21 +14,12 @@ def is_parameters_valid(id=None, slug=None, date=None):
         if slug:
             validate_slug(slug)
         if date:
-            datetime.strptime(date, '%d-%m-%Y')
+            datetime.strptime(date, '%Y-%m-%d')
         return True
     except ValueError:
         return False
     except ValidationError:
         return False
-
-
-def date_validation(date):
-    # валидация даты
-    try:
-        valid_date = datetime.strptime(date, '%d.%m.%Y')
-        return valid_date.date()
-    except ValueError:
-        return None
 
 
 def get_current_versions(date=datetime.now().date()):
