@@ -49,7 +49,7 @@
 - валидация элемента заданного справочника по указанной версии
 *class ElementGlossaryFilter http://127.0.0.1:8000/api/elements/filter/<?version=<версия справочника>&element_id=<id элемента>*
   
-### В API предусмотрен пагинация страниц (данные должны возвращаться частями по 10 элементов).
+### В API предусмотрена пагинация страниц (данные возвращаются частями по 10 элементов).
 #### settings.py
 REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
