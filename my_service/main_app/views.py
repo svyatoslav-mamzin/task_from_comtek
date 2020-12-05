@@ -29,11 +29,10 @@ class CurrentGlossariesView(APIView, MyPaginationMixin):
     pagination_class = api_settings.DEFAULT_PAGINATION_CLASS
 
     def get(self, request, date):
-
         if is_parameters_valid(date=date):
             self.queryset = get_current_versions(date)
             page = self.paginate_queryset(self.queryset)
-            if page is not None:
+            if self.queryset:
                 serializer = self.serializer_class(page, many=True)
                 return self.get_paginated_response({"current glossaries": serializer.data})
             else:
@@ -52,7 +51,7 @@ class ElementsGlossaryCurrentVersView(APIView, MyPaginationMixin):
         if is_parameters_valid(id=id):
             self.queryset = get_elements_current_glossary(id)
             page = self.paginate_queryset(self.queryset)
-            if page is not None:
+            if self.queryset:
                 serializer = self.serializer_class(page, many=True)
                 return self.get_paginated_response({"Elements Glossary Current Version": serializer.data})
             else:
@@ -70,7 +69,7 @@ class ElementsGlossarySpecVersView(APIView, MyPaginationMixin):
         if is_parameters_valid(id=id, slug=version):
             self.queryset = get_elements_glossary_cpec_ver(id, version)
             page = self.paginate_queryset(self.queryset)
-            if page is not None:
+            if self.queryset:
                 serializer = self.serializer_class(page, many=True)
                 return self.get_paginated_response({"elements glossary specified version": serializer.data})
             else:
@@ -93,7 +92,7 @@ class ElementGlossaryFilter(APIView, MyPaginationMixin):
             else:
                 self.queryset = get_filtered_items(id, elements_list)
             page = self.paginate_queryset(self.queryset)
-            if page is not None:
+            if self.queryset:
                 serializer = self.serializer_class(page, many=True)
                 return self.get_paginated_response({"filtered elements": serializer.data})
             else:

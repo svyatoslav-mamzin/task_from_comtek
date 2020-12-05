@@ -28,7 +28,7 @@ class Version(models.Model):
         )
 
     def __str__(self):
-        return '{} версии {} от {}'.format(self.glossary.name, self.version, self.initial_date)
+        return 'версия {} от {}'.format(self.version, self.initial_date)
 
 
 class GlossaryElement(models.Model):

@@ -12,8 +12,7 @@ class GlossarySerializer(serializers.Serializer):
 
 class VersionsSerializer(serializers.Serializer):
 
-    id = serializers.IntegerField()
-    glossary = serializers.StringRelatedField()
+    glossary = GlossarySerializer()
     version = serializers.CharField()
     initial_date = serializers.CharField()
 

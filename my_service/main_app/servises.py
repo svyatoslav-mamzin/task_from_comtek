@@ -1,8 +1,7 @@
-import re
 from datetime import datetime
 from django.core.exceptions import ValidationError
-from django.core.validators import RegexValidator
-from .models import Version, Glossary, GlossaryElement
+from django.core.validators import RegexValidator, validate_integer, _lazy_re_compile
+from .models import Version, GlossaryElement
 
 
 def is_parameters_valid(id=None, slug=None, date=None, list_id=None):
@@ -11,12 +10,10 @@ def is_parameters_valid(id=None, slug=None, date=None, list_id=None):
         if id == '0':
             return False
         elif id:
-            int(id)
+            validate_integer(id)
         if slug:
-            slug_re = re.compile(r'^[-a-zA-Z0-9_.]+\Z', 0)
-            validate_slug = RegexValidator(slug_re)
+            validate_slug = RegexValidator(_lazy_re_compile(r'^[-a-zA-Z0-9_.]+\Z'))
             validate_slug(slug)
-            #validate_slug(slug)
         if date:
             datetime.strptime(date, '%Y-%m-%d')
         if list_id:
@@ -54,6 +51,12 @@ def get_elements_glossary_cpec_ver(id, version):
 
 
 def get_filtered_items(id, elements_list, version=None):
-
-    current_version = get_current_version(id)
-    return GlossaryElement.objects.filter(glossary_ver__id=current_version.id, id__in=elements_list)
+    # вернуть отфильтрованные элементы заданного справочника
+    # если None то текущей версии
+    # если не None то указанной версии
+    if version is None:
+        current_version = get_current_version(id)
+        return GlossaryElement.objects.filter(glossary_ver__id=current_version.id,
+                                              id__in=elements_list)
+    return GlossaryElement.objects.filter(glossary_ver__version=version,
+                                          id__in=elements_list)

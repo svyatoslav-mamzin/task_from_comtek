@@ -43,13 +43,13 @@ API предоставляет следующие методы:
 - получение элементов заданного справочника текущей версии
   *class ElementsGlossaryCurrentVersView http://127.0.0.1:8000/api/elements/<id справочника>*
 - валидация элементов заданного справочника текущей версии 
-  *class ElementGlossaryFilter http://127.0.0.1:8000/api/elements/filter/<?element_id=<id элемента>&element_id=<id элемента> и.т.д>*
+  *class ElementGlossaryFilter http://127.0.0.1:8000/api/elements/filter/<id cправочника>/<?element_id=<id элемента>&element_id=<id элемента> и.т.д>*
 - получение элементов заданного справочника указанной версии
   *class ElementsGlossarySpecVersView http://127.0.0.1:8000/api/elements/<id справочника>/<версия справочника>* 
 - валидация элемента заданного справочника по указанной версии
-*class ElementGlossaryFilter http://127.0.0.1:8000/api/elements/filter/<?version=<версия справочника>&element_id=<id элемента>*
+*class ElementGlossaryFilter http://127.0.0.1:8000/api/elements/filter/<id справочника>/<?version=<версия справочника>&element_id=<id элемента>*
   
-###В API предусмотрен пагинация страниц (данные должны возвращаться частями по 10 элементов).
+###В API предусмотрена пагинация страниц (данные возвращаются частями по 10 элементов).
 ####settings.py
 REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
@@ -58,7 +58,7 @@ REST_FRAMEWORK = {
 ####paginator.py
 class MyPaginationMixin(object) от которого наследуются APIView
 
-К сервису иметься GUI административной части, с помощью которой можно добавлять новые справочники, новые версии справочников, указывать дату начала действия и наполнять справочники элементами.
+К сервису иметься GUI административной части, с помощью которой возможно добавлять новые справочники, новые версии справочников, указывать дату начала действия и наполнять справочники элементами.
 
 ## Технологии
 
