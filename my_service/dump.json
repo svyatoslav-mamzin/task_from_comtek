@@ -1,0 +1,1034 @@
+[
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$150000$uibQurZD5nVS$YygO8joRNfKDc3fQXgN1sgGyzU2/NmqizxuipDUk4BU=",
+        "last_login": "2020-11-08T13:03:50.543",
+        "is_superuser": false,
+        "username": "svyatoslav",
+        "first_name": "",
+        "last_name": "",
+        "email": "svyat@sss.ru",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2020-11-08T13:03:39.154",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$150000$sM9T0bkCUA7T$HFhOvr9tLkRwvfCno3oyvf9qgpoaqKoiorPzU/7c4Qo=",
+        "last_login": "2020-12-04T09:28:31.741",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "yoko11.06.92@yandex.ru",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2020-11-08T13:18:01.956",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$150000$IxOMUJ5Na8PD$nkBP/xKA1W/1jtM0N/67H8lcLluoHJKI+hTbng3a5GM=",
+        "last_login": "2020-11-08T13:34:18.002",
+        "is_superuser": false,
+        "username": "boris",
+        "first_name": "",
+        "last_name": "",
+        "email": "zver@bbbr.ru",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2020-11-08T13:34:10.283",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "d4vweokfi2yqyvdfcgyiyvtoo16ssfrc",
+    "fields": {
+        "session_data": "M2E0NTM2ZDYwM2M1MzM5N2FiODRmMDIzYmEzYjRmMTU1MWJhNGY5YTp7Il9hdXRoX3VzZXJfaWQiOiIyIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIzZjU3ODE4MTM5MjEwMzE5ODc2NzBhOTIxY2Q2NzIyNjM2MGMxZTM3In0=",
+        "expire_date": "2020-11-22T13:37:56.594"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "dtt1utgcx1my67ccgnb1ibztxvsidxe2",
+    "fields": {
+        "session_data": "NjY4YzEzZWU3MTgwMzIxZDE1M2U4ZjRkMDNhMWFjYjZkM2E1NTg1Mzp7Il9hdXRoX3VzZXJfaWQiOiIyIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI5Nzg3Y2RiNDQwZjI2ZWY5NTEyZTBmNTk5YTNkZTQ5YjVjM2EwZTM4In0=",
+        "expire_date": "2020-12-17T13:48:23.681"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "lblfz3ttpv44ivyb3fohvted3n1vsh6g",
+    "fields": {
+        "session_data": "NjY4YzEzZWU3MTgwMzIxZDE1M2U4ZjRkMDNhMWFjYjZkM2E1NTg1Mzp7Il9hdXRoX3VzZXJfaWQiOiIyIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI5Nzg3Y2RiNDQwZjI2ZWY5NTEyZTBmNTk5YTNkZTQ5YjVjM2EwZTM4In0=",
+        "expire_date": "2020-12-18T09:28:32.160"
+    }
+},
+{
+    "model": "main_app.glossary",
+    "pk": 1,
+    "fields": {
+        "name": "\u0421\u043f\u0440\u0430\u0432\u043e\u0447\u043d\u0438\u043a\u21161",
+        "short_name": "\u21161",
+        "description": "\u0442\u0435\u043a\u0441\u0442"
+    }
+},
+{
+    "model": "main_app.glossary",
+    "pk": 2,
+    "fields": {
+        "name": "\u0421\u043f\u0440\u0430\u0432\u043e\u0447\u043d\u0438\u043a\u21162",
+        "short_name": "\u21162",
+        "description": "\u0442\u0435\u043a\u0441\u0442 \u0442\u0435\u043a\u0441\u0442"
+    }
+},
+{
+    "model": "main_app.glossary",
+    "pk": 3,
+    "fields": {
+        "name": "\u0421\u043f\u0440\u0430\u0432\u043e\u0447\u043d\u0438\u043a\u21163",
+        "short_name": "\u21163",
+        "description": "\u0442\u0435\u0441\u0442"
+    }
+},
+{
+    "model": "main_app.glossary",
+    "pk": 4,
+    "fields": {
+        "name": "\u0421\u043f\u0440\u0430\u0432\u043e\u0447\u043d\u0438\u043a\u21164",
+        "short_name": "\u21164",
+        "description": "\u0442\u0440\u0430\u0442\u0430\u0442\u0442\u0442\u0442\u0442\u0442\u0442"
+    }
+},
+{
+    "model": "main_app.glossary",
+    "pk": 5,
+    "fields": {
+        "name": "\u0421\u043f\u0440\u0430\u0432\u043e\u0447\u043d\u0438\u043a\u21165",
+        "short_name": "\u21165",
+        "description": "\u0442\u0435\u043a\u0441\u0442\u0442\u0435\u043a\u0441\u0442\u0442\u0435\u043a\u0441\u0442"
+    }
+},
+{
+    "model": "main_app.glossary",
+    "pk": 6,
+    "fields": {
+        "name": "\u0421\u043f\u0440\u0430\u0432\u043e\u0447\u043d\u0438\u043a\u21166",
+        "short_name": "\u21166",
+        "description": ""
+    }
+},
+{
+    "model": "main_app.glossary",
+    "pk": 7,
+    "fields": {
+        "name": "\u0421\u043f\u0440\u0430\u0432\u043e\u0447\u043d\u0438\u043a\u21167",
+        "short_name": "\u21167",
+        "description": ""
+    }
+},
+{
+    "model": "main_app.glossary",
+    "pk": 8,
+    "fields": {
+        "name": "\u0421\u043f\u0440\u0430\u0432\u043e\u0447\u043d\u0438\u043a\u211612",
+        "short_name": "\u211612",
+        "description": "\u0432\u0432\u0430\u043f\u0440\u0440\u043e"
+    }
+},
+{
+    "model": "main_app.glossary",
+    "pk": 9,
+    "fields": {
+        "name": "\u0421\u043f\u0440\u0430\u0432\u043e\u0447\u043d\u0438\u043a\u21168",
+        "short_name": "\u21168",
+        "description": "\u0432\u044b\u0430\u0432\u044b\u0430"
+    }
+},
+{
+    "model": "main_app.glossary",
+    "pk": 10,
+    "fields": {
+        "name": "\u0421\u043f\u0440\u0430\u0432\u043e\u0447\u043d\u0438\u043a\u21169",
+        "short_name": "\u21169",
+        "description": "\u0442\u0440\u043e\u044c\u043f\u0430\u043c\u0432\u044b"
+    }
+},
+{
+    "model": "main_app.glossary",
+    "pk": 11,
+    "fields": {
+        "name": "\u0421\u043f\u0440\u0430\u0432\u043e\u0447\u043d\u0438\u043a\u211610",
+        "short_name": "\u211610",
+        "description": "\u0435\u043e\u0433\u043e"
+    }
+},
+{
+    "model": "main_app.glossary",
+    "pk": 12,
+    "fields": {
+        "name": "\u0421\u043f\u0440\u0430\u0432\u043e\u0447\u043d\u0438\u043a\u211611",
+        "short_name": "\u211611",
+        "description": ""
+    }
+},
+{
+    "model": "main_app.version",
+    "pk": 1,
+    "fields": {
+        "glossary": 1,
+        "version": "1",
+        "initial_date": "2020-10-01"
+    }
+},
+{
+    "model": "main_app.version",
+    "pk": 2,
+    "fields": {
+        "glossary": 1,
+        "version": "2",
+        "initial_date": "2020-11-01"
+    }
+},
+{
+    "model": "main_app.version",
+    "pk": 3,
+    "fields": {
+        "glossary": 1,
+        "version": "3",
+        "initial_date": "2020-12-01"
+    }
+},
+{
+    "model": "main_app.version",
+    "pk": 4,
+    "fields": {
+        "glossary": 1,
+        "version": "4",
+        "initial_date": "2020-12-02"
+    }
+},
+{
+    "model": "main_app.version",
+    "pk": 5,
+    "fields": {
+        "glossary": 2,
+        "version": "1",
+        "initial_date": "2020-08-01"
+    }
+},
+{
+    "model": "main_app.version",
+    "pk": 6,
+    "fields": {
+        "glossary": 2,
+        "version": "2",
+        "initial_date": "2020-12-02"
+    }
+},
+{
+    "model": "main_app.version",
+    "pk": 7,
+    "fields": {
+        "glossary": 2,
+        "version": "3",
+        "initial_date": "2021-01-01"
+    }
+},
+{
+    "model": "main_app.version",
+    "pk": 8,
+    "fields": {
+        "glossary": 3,
+        "version": "1",
+        "initial_date": "2020-11-01"
+    }
+},
+{
+    "model": "main_app.version",
+    "pk": 9,
+    "fields": {
+        "glossary": 3,
+        "version": "2",
+        "initial_date": "2020-11-04"
+    }
+},
+{
+    "model": "main_app.version",
+    "pk": 10,
+    "fields": {
+        "glossary": 3,
+        "version": "3",
+        "initial_date": "2020-12-14"
+    }
+},
+{
+    "model": "main_app.version",
+    "pk": 11,
+    "fields": {
+        "glossary": 3,
+        "version": "3.1",
+        "initial_date": "2020-12-18"
+    }
+},
+{
+    "model": "main_app.version",
+    "pk": 12,
+    "fields": {
+        "glossary": 4,
+        "version": "1",
+        "initial_date": "2020-10-02"
+    }
+},
+{
+    "model": "main_app.version",
+    "pk": 13,
+    "fields": {
+        "glossary": 4,
+        "version": "1.1",
+        "initial_date": "2020-10-10"
+    }
+},
+{
+    "model": "main_app.version",
+    "pk": 14,
+    "fields": {
+        "glossary": 4,
+        "version": "1.1.1",
+        "initial_date": "2020-12-02"
+    }
+},
+{
+    "model": "main_app.version",
+    "pk": 15,
+    "fields": {
+        "glossary": 5,
+        "version": "1",
+        "initial_date": "2020-11-11"
+    }
+},
+{
+    "model": "main_app.version",
+    "pk": 16,
+    "fields": {
+        "glossary": 5,
+        "version": "2.1",
+        "initial_date": "2020-11-27"
+    }
+},
+{
+    "model": "main_app.version",
+    "pk": 17,
+    "fields": {
+        "glossary": 5,
+        "version": "2.2.1",
+        "initial_date": "2020-12-02"
+    }
+},
+{
+    "model": "main_app.version",
+    "pk": 18,
+    "fields": {
+        "glossary": 6,
+        "version": "1",
+        "initial_date": "2020-11-05"
+    }
+},
+{
+    "model": "main_app.version",
+    "pk": 19,
+    "fields": {
+        "glossary": 6,
+        "version": "1.1",
+        "initial_date": "2020-12-04"
+    }
+},
+{
+    "model": "main_app.version",
+    "pk": 20,
+    "fields": {
+        "glossary": 6,
+        "version": "1.2",
+        "initial_date": "2020-12-19"
+    }
+},
+{
+    "model": "main_app.version",
+    "pk": 21,
+    "fields": {
+        "glossary": 7,
+        "version": "1",
+        "initial_date": "2020-09-22"
+    }
+},
+{
+    "model": "main_app.version",
+    "pk": 22,
+    "fields": {
+        "glossary": 7,
+        "version": "2",
+        "initial_date": "2020-10-14"
+    }
+},
+{
+    "model": "main_app.version",
+    "pk": 23,
+    "fields": {
+        "glossary": 7,
+        "version": "2.1",
+        "initial_date": "2020-12-04"
+    }
+},
+{
+    "model": "main_app.version",
+    "pk": 24,
+    "fields": {
+        "glossary": 8,
+        "version": "1",
+        "initial_date": "2020-11-12"
+    }
+},
+{
+    "model": "main_app.version",
+    "pk": 25,
+    "fields": {
+        "glossary": 9,
+        "version": "1",
+        "initial_date": "2020-12-04"
+    }
+},
+{
+    "model": "main_app.version",
+    "pk": 26,
+    "fields": {
+        "glossary": 10,
+        "version": "1",
+        "initial_date": "2020-12-01"
+    }
+},
+{
+    "model": "main_app.version",
+    "pk": 27,
+    "fields": {
+        "glossary": 10,
+        "version": "2",
+        "initial_date": "2021-02-19"
+    }
+},
+{
+    "model": "main_app.version",
+    "pk": 28,
+    "fields": {
+        "glossary": 11,
+        "version": "1",
+        "initial_date": "2020-10-21"
+    }
+},
+{
+    "model": "main_app.version",
+    "pk": 29,
+    "fields": {
+        "glossary": 11,
+        "version": "2",
+        "initial_date": "2020-12-01"
+    }
+},
+{
+    "model": "main_app.version",
+    "pk": 30,
+    "fields": {
+        "glossary": 12,
+        "version": "1",
+        "initial_date": "2020-12-04"
+    }
+},
+{
+    "model": "main_app.version",
+    "pk": 31,
+    "fields": {
+        "glossary": 9,
+        "version": "2",
+        "initial_date": "2020-12-02"
+    }
+},
+{
+    "model": "main_app.version",
+    "pk": 32,
+    "fields": {
+        "glossary": 8,
+        "version": "1.1",
+        "initial_date": "2020-12-01"
+    }
+},
+{
+    "model": "main_app.glossaryelement",
+    "pk": 1,
+    "fields": {
+        "glossary_ver": 1,
+        "article": "\u0444\u043e\u0440\u043e\u044b\u0440\u044b",
+        "value": "\u0430\u0431\u0440\u0430\u043a\u0430\u0442\u0430\u0431\u0440\u0430"
+    }
+},
+{
+    "model": "main_app.glossaryelement",
+    "pk": 2,
+    "fields": {
+        "glossary_ver": 1,
+        "article": "0923432",
+        "value": "sdfsdfsdf"
+    }
+},
+{
+    "model": "main_app.glossaryelement",
+    "pk": 3,
+    "fields": {
+        "glossary_ver": 1,
+        "article": "111",
+        "value": "sfsdfsd"
+    }
+},
+{
+    "model": "main_app.glossaryelement",
+    "pk": 4,
+    "fields": {
+        "glossary_ver": 1,
+        "article": "222",
+        "value": "sdfsdfsdf"
+    }
+},
+{
+    "model": "main_app.glossaryelement",
+    "pk": 5,
+    "fields": {
+        "glossary_ver": 2,
+        "article": "2223",
+        "value": "rrrrr"
+    }
+},
+{
+    "model": "main_app.glossaryelement",
+    "pk": 6,
+    "fields": {
+        "glossary_ver": 2,
+        "article": "00123",
+        "value": "fddgdfgdf"
+    }
+},
+{
+    "model": "main_app.glossaryelement",
+    "pk": 7,
+    "fields": {
+        "glossary_ver": 2,
+        "article": "3`13`13`13",
+        "value": "sssfrehrth"
+    }
+},
+{
+    "model": "main_app.glossaryelement",
+    "pk": 8,
+    "fields": {
+        "glossary_ver": 7,
+        "article": "334466",
+        "value": "sdgdfghgtf"
+    }
+},
+{
+    "model": "main_app.glossaryelement",
+    "pk": 9,
+    "fields": {
+        "glossary_ver": 14,
+        "article": "7643",
+        "value": "dfgdfghfdg"
+    }
+},
+{
+    "model": "main_app.glossaryelement",
+    "pk": 10,
+    "fields": {
+        "glossary_ver": 14,
+        "article": "f444",
+        "value": "yrgfdhbgfhd"
+    }
+},
+{
+    "model": "main_app.glossaryelement",
+    "pk": 11,
+    "fields": {
+        "glossary_ver": 17,
+        "article": "221144",
+        "value": "kkdsacddsf"
+    }
+},
+{
+    "model": "main_app.glossaryelement",
+    "pk": 12,
+    "fields": {
+        "glossary_ver": 17,
+        "article": "444666777",
+        "value": "sfdfsgd"
+    }
+},
+{
+    "model": "main_app.glossaryelement",
+    "pk": 13,
+    "fields": {
+        "glossary_ver": 5,
+        "article": "12345678",
+        "value": "sdfsdfsdfdsgdsgdsgdgdsg"
+    }
+},
+{
+    "model": "main_app.glossaryelement",
+    "pk": 14,
+    "fields": {
+        "glossary_ver": 4,
+        "article": "wweeew",
+        "value": "sdjbdsjfdgs"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2020-12-02T15:14:28.084",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "main_app",
+            "glossary"
+        ],
+        "object_id": "1",
+        "object_repr": "\u21161",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"version\", \"object\": \"\\u0421\\u043f\\u0440\\u0430\\u0432\\u043e\\u0447\\u043d\\u0438\\u043a\\u21161 \\u0432\\u0435\\u0440\\u0441\\u0438\\u0438 - 1\"}}, {\"added\": {\"name\": \"version\", \"object\": \"\\u0421\\u043f\\u0440\\u0430\\u0432\\u043e\\u0447\\u043d\\u0438\\u043a\\u21161 \\u0432\\u0435\\u0440\\u0441\\u0438\\u0438 - 2\"}}, {\"added\": {\"name\": \"version\", \"object\": \"\\u0421\\u043f\\u0440\\u0430\\u0432\\u043e\\u0447\\u043d\\u0438\\u043a\\u21161 \\u0432\\u0435\\u0440\\u0441\\u0438\\u0438 - 3\"}}, {\"added\": {\"name\": \"version\", \"object\": \"\\u0421\\u043f\\u0440\\u0430\\u0432\\u043e\\u0447\\u043d\\u0438\\u043a\\u21161 \\u0432\\u0435\\u0440\\u0441\\u0438\\u0438 - 4\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2020-12-02T15:16:20.455",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "main_app",
+            "glossary"
+        ],
+        "object_id": "2",
+        "object_repr": "\u21162",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"version\", \"object\": \"\\u0421\\u043f\\u0440\\u0430\\u0432\\u043e\\u0447\\u043d\\u0438\\u043a\\u21162 \\u0432\\u0435\\u0440\\u0441\\u0438\\u0438 - 1\"}}, {\"added\": {\"name\": \"version\", \"object\": \"\\u0421\\u043f\\u0440\\u0430\\u0432\\u043e\\u0447\\u043d\\u0438\\u043a\\u21162 \\u0432\\u0435\\u0440\\u0441\\u0438\\u0438 - 2\"}}, {\"added\": {\"name\": \"version\", \"object\": \"\\u0421\\u043f\\u0440\\u0430\\u0432\\u043e\\u0447\\u043d\\u0438\\u043a\\u21162 \\u0432\\u0435\\u0440\\u0441\\u0438\\u0438 - 3\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2020-12-02T15:20:19.531",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "main_app",
+            "glossary"
+        ],
+        "object_id": "3",
+        "object_repr": "\u21163",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"version\", \"object\": \"\\u0421\\u043f\\u0440\\u0430\\u0432\\u043e\\u0447\\u043d\\u0438\\u043a\\u21163 \\u0432\\u0435\\u0440\\u0441\\u0438\\u0438 - 1\"}}, {\"added\": {\"name\": \"version\", \"object\": \"\\u0421\\u043f\\u0440\\u0430\\u0432\\u043e\\u0447\\u043d\\u0438\\u043a\\u21163 \\u0432\\u0435\\u0440\\u0441\\u0438\\u0438 - 2\"}}, {\"added\": {\"name\": \"version\", \"object\": \"\\u0421\\u043f\\u0440\\u0430\\u0432\\u043e\\u0447\\u043d\\u0438\\u043a\\u21163 \\u0432\\u0435\\u0440\\u0441\\u0438\\u0438 - 3\"}}, {\"added\": {\"name\": \"version\", \"object\": \"\\u0421\\u043f\\u0440\\u0430\\u0432\\u043e\\u0447\\u043d\\u0438\\u043a\\u21163 \\u0432\\u0435\\u0440\\u0441\\u0438\\u0438 - 3.1\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2020-12-02T15:22:20.998",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "main_app",
+            "glossary"
+        ],
+        "object_id": "4",
+        "object_repr": "\u21164",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"version\", \"object\": \"\\u0421\\u043f\\u0440\\u0430\\u0432\\u043e\\u0447\\u043d\\u0438\\u043a\\u21164 \\u0432\\u0435\\u0440\\u0441\\u0438\\u0438 - 1\"}}, {\"added\": {\"name\": \"version\", \"object\": \"\\u0421\\u043f\\u0440\\u0430\\u0432\\u043e\\u0447\\u043d\\u0438\\u043a\\u21164 \\u0432\\u0435\\u0440\\u0441\\u0438\\u0438 - 1.1\"}}, {\"added\": {\"name\": \"version\", \"object\": \"\\u0421\\u043f\\u0440\\u0430\\u0432\\u043e\\u0447\\u043d\\u0438\\u043a\\u21164 \\u0432\\u0435\\u0440\\u0441\\u0438\\u0438 - 1.1.1\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2020-12-02T15:24:43.399",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "main_app",
+            "glossary"
+        ],
+        "object_id": "5",
+        "object_repr": "\u21165",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"version\", \"object\": \"\\u0421\\u043f\\u0440\\u0430\\u0432\\u043e\\u0447\\u043d\\u0438\\u043a\\u21165 \\u0432\\u0435\\u0440\\u0441\\u0438\\u0438 - 1\"}}, {\"added\": {\"name\": \"version\", \"object\": \"\\u0421\\u043f\\u0440\\u0430\\u0432\\u043e\\u0447\\u043d\\u0438\\u043a\\u21165 \\u0432\\u0435\\u0440\\u0441\\u0438\\u0438 - 2.1\"}}, {\"added\": {\"name\": \"version\", \"object\": \"\\u0421\\u043f\\u0440\\u0430\\u0432\\u043e\\u0447\\u043d\\u0438\\u043a\\u21165 \\u0432\\u0435\\u0440\\u0441\\u0438\\u0438 - 2.2.1\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2020-12-02T15:26:11.871",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "main_app",
+            "glossaryelement"
+        ],
+        "object_id": "1",
+        "object_repr": "\u0444\u043e\u0440\u043e\u044b\u0440\u044b",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2020-12-02T15:35:11.276",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "main_app",
+            "version"
+        ],
+        "object_id": "1",
+        "object_repr": "\u0421\u043f\u0440\u0430\u0432\u043e\u0447\u043d\u0438\u043a\u21161 \u0432\u0435\u0440\u0441\u0438\u0438 - 1",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"glossary element\", \"object\": \"0923432\"}}, {\"added\": {\"name\": \"glossary element\", \"object\": \"111\"}}, {\"added\": {\"name\": \"glossary element\", \"object\": \"222\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2020-12-02T15:35:52.030",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "main_app",
+            "version"
+        ],
+        "object_id": "2",
+        "object_repr": "\u0421\u043f\u0440\u0430\u0432\u043e\u0447\u043d\u0438\u043a\u21161 \u0432\u0435\u0440\u0441\u0438\u0438 - 2",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"glossary element\", \"object\": \"2223\"}}, {\"added\": {\"name\": \"glossary element\", \"object\": \"00123\"}}, {\"added\": {\"name\": \"glossary element\", \"object\": \"3`13`13`13\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2020-12-02T15:36:05.419",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "main_app",
+            "version"
+        ],
+        "object_id": "7",
+        "object_repr": "\u0421\u043f\u0440\u0430\u0432\u043e\u0447\u043d\u0438\u043a\u21162 \u0432\u0435\u0440\u0441\u0438\u0438 - 3",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"glossary element\", \"object\": \"334466\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2020-12-02T15:36:57.471",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "main_app",
+            "version"
+        ],
+        "object_id": "14",
+        "object_repr": "\u0421\u043f\u0440\u0430\u0432\u043e\u0447\u043d\u0438\u043a\u21164 \u0432\u0435\u0440\u0441\u0438\u0438 - 1.1.1",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"glossary element\", \"object\": \"7643\"}}, {\"added\": {\"name\": \"glossary element\", \"object\": \"f444\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2020-12-02T15:37:14.247",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "main_app",
+            "version"
+        ],
+        "object_id": "17",
+        "object_repr": "\u0421\u043f\u0440\u0430\u0432\u043e\u0447\u043d\u0438\u043a\u21165 \u0432\u0435\u0440\u0441\u0438\u0438 - 2.2.1",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"glossary element\", \"object\": \"221144\"}}, {\"added\": {\"name\": \"glossary element\", \"object\": \"444666777\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2020-12-02T15:42:59.224",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "main_app",
+            "version"
+        ],
+        "object_id": "5",
+        "object_repr": "\u0421\u043f\u0440\u0430\u0432\u043e\u0447\u043d\u0438\u043a\u21162 \u0432\u0435\u0440\u0441\u0438\u0438 - 1",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"glossary element\", \"object\": \"12345678\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2020-12-03T14:02:54.735",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "main_app",
+            "version"
+        ],
+        "object_id": "4",
+        "object_repr": "\u0421\u043f\u0440\u0430\u0432\u043e\u0447\u043d\u0438\u043a\u21161 \u0432\u0435\u0440\u0441\u0438\u0438 4 \u043e\u0442 2020-12-02",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"glossary element\", \"object\": \"wweeew\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2020-12-04T09:29:41.515",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "main_app",
+            "glossary"
+        ],
+        "object_id": "6",
+        "object_repr": "\u21166",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"version\", \"object\": \"\\u0421\\u043f\\u0440\\u0430\\u0432\\u043e\\u0447\\u043d\\u0438\\u043a\\u21166 \\u0432\\u0435\\u0440\\u0441\\u0438\\u0438 1 \\u043e\\u0442 2020-11-05\"}}, {\"added\": {\"name\": \"version\", \"object\": \"\\u0421\\u043f\\u0440\\u0430\\u0432\\u043e\\u0447\\u043d\\u0438\\u043a\\u21166 \\u0432\\u0435\\u0440\\u0441\\u0438\\u0438 1.1 \\u043e\\u0442 2020-12-04\"}}, {\"added\": {\"name\": \"version\", \"object\": \"\\u0421\\u043f\\u0440\\u0430\\u0432\\u043e\\u0447\\u043d\\u0438\\u043a\\u21166 \\u0432\\u0435\\u0440\\u0441\\u0438\\u0438 1.2 \\u043e\\u0442 2020-12-19\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2020-12-04T09:47:09.754",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "main_app",
+            "glossary"
+        ],
+        "object_id": "7",
+        "object_repr": "\u21167",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"version\", \"object\": \"\\u0421\\u043f\\u0440\\u0430\\u0432\\u043e\\u0447\\u043d\\u0438\\u043a\\u21167 \\u0432\\u0435\\u0440\\u0441\\u0438\\u0438 1 \\u043e\\u0442 2020-09-22\"}}, {\"added\": {\"name\": \"version\", \"object\": \"\\u0421\\u043f\\u0440\\u0430\\u0432\\u043e\\u0447\\u043d\\u0438\\u043a\\u21167 \\u0432\\u0435\\u0440\\u0441\\u0438\\u0438 2 \\u043e\\u0442 2020-10-14\"}}, {\"added\": {\"name\": \"version\", \"object\": \"\\u0421\\u043f\\u0440\\u0430\\u0432\\u043e\\u0447\\u043d\\u0438\\u043a\\u21167 \\u0432\\u0435\\u0440\\u0441\\u0438\\u0438 2.1 \\u043e\\u0442 2020-12-04\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2020-12-04T09:47:34.297",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "main_app",
+            "glossary"
+        ],
+        "object_id": "8",
+        "object_repr": "\u21167",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"version\", \"object\": \"\\u0421\\u043f\\u0440\\u0430\\u0432\\u043e\\u0447\\u043d\\u0438\\u043a\\u21167 \\u0432\\u0435\\u0440\\u0441\\u0438\\u0438 1 \\u043e\\u0442 2020-12-04\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2020-12-04T09:48:08.361",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "main_app",
+            "glossary"
+        ],
+        "object_id": "9",
+        "object_repr": "\u21168",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"version\", \"object\": \"\\u0421\\u043f\\u0440\\u0430\\u0432\\u043e\\u0447\\u043d\\u0438\\u043a\\u21168 \\u0432\\u0435\\u0440\\u0441\\u0438\\u0438 1 \\u043e\\u0442 2020-12-04\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2020-12-04T09:48:38.651",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "main_app",
+            "glossary"
+        ],
+        "object_id": "10",
+        "object_repr": "\u21169",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"version\", \"object\": \"\\u0421\\u043f\\u0440\\u0430\\u0432\\u043e\\u0447\\u043d\\u0438\\u043a\\u21169 \\u0432\\u0435\\u0440\\u0441\\u0438\\u0438 1 \\u043e\\u0442 2020-12-04\"}}, {\"added\": {\"name\": \"version\", \"object\": \"\\u0421\\u043f\\u0440\\u0430\\u0432\\u043e\\u0447\\u043d\\u0438\\u043a\\u21169 \\u0432\\u0435\\u0440\\u0441\\u0438\\u0438 2 \\u043e\\u0442 2021-02-19\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2020-12-04T09:49:10.177",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "main_app",
+            "glossary"
+        ],
+        "object_id": "11",
+        "object_repr": "\u211610",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"version\", \"object\": \"\\u0421\\u043f\\u0440\\u0430\\u0432\\u043e\\u0447\\u043d\\u0438\\u043a\\u211610 \\u0432\\u0435\\u0440\\u0441\\u0438\\u0438 1 \\u043e\\u0442 2020-10-21\"}}, {\"added\": {\"name\": \"version\", \"object\": \"\\u0421\\u043f\\u0440\\u0430\\u0432\\u043e\\u0447\\u043d\\u0438\\u043a\\u211610 \\u0432\\u0435\\u0440\\u0441\\u0438\\u0438 2 \\u043e\\u0442 2020-12-01\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2020-12-04T09:49:35.162",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "main_app",
+            "glossary"
+        ],
+        "object_id": "12",
+        "object_repr": "\u211611",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"version\", \"object\": \"\\u0421\\u043f\\u0440\\u0430\\u0432\\u043e\\u0447\\u043d\\u0438\\u043a\\u211611 \\u0432\\u0435\\u0440\\u0441\\u0438\\u0438 1 \\u043e\\u0442 2020-12-04\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2020-12-04T09:50:25.424",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "main_app",
+            "glossary"
+        ],
+        "object_id": "8",
+        "object_repr": "\u211612",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"name\", \"short_name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2020-12-04T10:24:56.222",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "main_app",
+            "glossary"
+        ],
+        "object_id": "9",
+        "object_repr": "\u21168",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"version\", \"object\": \"\\u0421\\u043f\\u0440\\u0430\\u0432\\u043e\\u0447\\u043d\\u0438\\u043a\\u21168 \\u0432\\u0435\\u0440\\u0441\\u0438\\u0438 2 \\u043e\\u0442 2020-12-02\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2020-12-04T10:25:28.228",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "main_app",
+            "glossary"
+        ],
+        "object_id": "10",
+        "object_repr": "\u21169",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"name\": \"version\", \"object\": \"\\u0421\\u043f\\u0440\\u0430\\u0432\\u043e\\u0447\\u043d\\u0438\\u043a\\u21169 \\u0432\\u0435\\u0440\\u0441\\u0438\\u0438 1 \\u043e\\u0442 2020-12-01\", \"fields\": [\"initial_date\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2020-12-04T10:25:53.849",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "main_app",
+            "glossary"
+        ],
+        "object_id": "8",
+        "object_repr": "\u211612",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"version\", \"object\": \"\\u0421\\u043f\\u0440\\u0430\\u0432\\u043e\\u0447\\u043d\\u0438\\u043a\\u211612 \\u0432\\u0435\\u0440\\u0441\\u0438\\u0438 1.1 \\u043e\\u0442 2020-12-01\"}}, {\"changed\": {\"name\": \"version\", \"object\": \"\\u0421\\u043f\\u0440\\u0430\\u0432\\u043e\\u0447\\u043d\\u0438\\u043a\\u211612 \\u0432\\u0435\\u0440\\u0441\\u0438\\u0438 1 \\u043e\\u0442 2020-11-12\", \"fields\": [\"initial_date\"]}}]"
+    }
+}
+]
